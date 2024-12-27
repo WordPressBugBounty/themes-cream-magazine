@@ -75,7 +75,7 @@ if ( ! function_exists( 'cream_magazine_get_default_theme_options' ) ) {
 			'cream_magazine_enable_scroll_top_button'      => true,
 			'cream_magazine_show_footer_widget_area'       => true,
 			'cream_magazine_show_footer_widget_area_on_mobile_n_tablet' => true,
-			'cream_magazine_copyright_credit'              => '',
+			'cream_magazine_copyright_credit'              => esc_html__( 'Copyright {copy} {year} {site_title}. All rights reserved.', 'cream-magazine' ),
 			'cream_magazine_enable_blog_categories_meta'   => true,
 			'cream_magazine_enable_blog_author_meta'       => true,
 			'cream_magazine_enable_blog_date_meta'         => true,

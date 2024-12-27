@@ -459,6 +459,8 @@ class Cream_Magazine {
 	 */
 	public function load_dependencies() {
 
+		// Load theme welcome notice.
+		require get_template_directory() . '/admin/welcome-notice/class-cream-magazine-theme-welcome-notice.php';
 		// Load theme functions.
 		require get_template_directory() . '/inc/theme-functions.php';
 		// Load custom hook functions.

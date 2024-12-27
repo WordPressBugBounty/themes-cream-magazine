@@ -781,21 +781,28 @@ if ( ! function_exists( 'cream_magazine_copyright_action' ) ) {
 				<p>
 					<?php
 					if ( ! empty( $copyright_text ) ) {
-						printf(
-							/* translators: 1: Copyright Text 2: Theme name, 3: Theme author. */
-							__( '<span class="copyright-text">%1$s</span> %2$s by %3$s','cream-magazine' ), // phpcs:ignore
-							esc_html( $copyright_text ),
-							'Cream Magazine',
-							'<a href="' . esc_url( 'https://themebeez.com' ) . '" rel="designer noopener" target="_blank">' . esc_html__( 'Themebeez', 'cream-magazine' ) . '</a>'
-						);
+						if ( str_contains( $copyright_text, '{copy}' ) ) {
+							$copy_right_symbol = '&copy;';
+							$copyright_text    = str_replace( '{copy}', $copy_right_symbol, $copyright_text );
+						}
 
-					} else {
-						printf(
-							/* translators: 1: Theme name, 2: Theme author. */
-							esc_html__( '%1$s by %2$s', 'cream-magazine' ),
-							'Cream Magazine',
-							'<a href="' . esc_url( 'https://themebeez.com' ) . '">' . esc_html__( 'Themebeez', 'cream-magazine' ) . '</a>'
-						);
+						if ( str_contains( $copyright_text, '{year}' ) ) {
+							$year           = gmdate( 'Y' );
+							$copyright_text = str_replace( '{year}', $year, $copyright_text );
+						}
+
+						if ( str_contains( $copyright_text, '{site_title}' ) ) {
+							$title          = get_bloginfo( 'name' );
+							$copyright_text = str_replace( '{site_title}', $title, $copyright_text );
+						}
+
+						if ( str_contains( $copyright_text, '{theme_author}' ) ) {
+							$theme_author   = '<a href="https://themebeez.com" rel="author" target="_blank">Themebeez</a>';
+							$copyright_text = str_replace( '{theme_author}', $theme_author, $copyright_text );
+						}
+
+						echo wp_kses_post( $copyright_text );
+
 					}
 					?>
 				</p>

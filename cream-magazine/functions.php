@@ -24,3 +24,17 @@ function cream_magazine_run() {
 }
 
 cream_magazine_run();
+
+
+add_action(
+	'init',
+	function () {
+		new Cream_Magazine_Theme_Welcome_Notice(
+			'Cream Magazine',
+			admin_url( 'admin.php?page=cream-magazine' ),
+			array(
+				'themebeez-toolkit/themebeez-toolkit.php' => 'https://downloads.wordpress.org/plugin/themebeez-toolkit.zip',
+			)
+		);
+	}
+);

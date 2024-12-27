@@ -167,9 +167,10 @@ if ( ! class_exists( 'Cream_Magazine_Footer_Customize' ) ) {
 			$wp_customize->add_control(
 				'cream_magazine_copyright_credit',
 				array(
-					'label'   => esc_html__( 'Copyright Text', 'cream-magazine' ),
-					'section' => 'cream_magazine_footer_options',
-					'type'    => 'text',
+					'label'       => esc_html__( 'Copyright Text', 'cream-magazine' ),
+					'description' => esc_html__( 'You can use {copy}, {year}, {site_title} and {theme_author} placeholders to display copy icon, current_year, site title and theme author respectively in the copyright text.', 'cream-magazine' ),
+					'section'     => 'cream_magazine_footer_options',
+					'type'        => 'textarea',
 				)
 			);
 		}

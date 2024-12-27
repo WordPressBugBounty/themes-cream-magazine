@@ -2,16 +2,16 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Cream Magazine 2.1.7\n"
+"Project-Id-Version: Cream Magazine 2.1.8\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/cream-magazine\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-03-05T06:06:40+00:00\n"
+"POT-Creation-Date: 2024-12-27T16:40:02+05:45\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"X-Generator: WP-CLI 2.9.0\n"
+"X-Generator: WP-CLI 2.11.0\n"
 "X-Domain: cream-magazine\n"
 
 #. Theme Name of the theme
@@ -49,6 +49,29 @@ msgstr ""
 
 #: 404.php:35
 msgid "It looks like nothing was found at this location. Try searching below."
+msgstr ""
+
+#. translators: %s: current user's display name
+#: admin/welcome-notice/class-cream-magazine-theme-welcome-notice.php:137
+msgid "Hello, %s"
+msgstr ""
+
+#. translators: %s: theme name
+#: admin/welcome-notice/class-cream-magazine-theme-welcome-notice.php:146
+msgid "Welcome to %s"
+msgstr ""
+
+#. translators: 1: theme name
+#: admin/welcome-notice/class-cream-magazine-theme-welcome-notice.php:155
+msgid "Thank you for choosing %1$s! To get started with %1$s and import starter templates, install Themebeez Toolkit plugin by clicking on the button below! We hope you enjoy using %1$s."
+msgstr ""
+
+#: admin/welcome-notice/class-cream-magazine-theme-welcome-notice.php:165
+msgid "Get Started"
+msgstr ""
+
+#: admin/welcome-notice/class-cream-magazine-theme-welcome-notice.php:175
+msgid "Notice Image"
 msgstr ""
 
 #. translators: 1: title.
@@ -112,7 +135,7 @@ msgstr ""
 msgid "XL"
 msgstr ""
 
-#: inc/class-cream-magazine.php:546
+#: inc/class-cream-magazine.php:548
 msgid "Search..."
 msgstr ""
 
@@ -434,6 +457,10 @@ msgstr ""
 msgid "Copyright Text"
 msgstr ""
 
+#: inc/customizer/options/class-cream-magazine-footer-customize.php:171
+msgid "You can use {copy}, {year}, {site_title} and {theme_author} placeholders to display copy icon, current_year, site title and theme author respectively in the copyright text."
+msgstr ""
+
 #: inc/customizer/options/class-cream-magazine-global-customize.php:44
 msgid "Option&rsquo;s Value"
 msgstr ""
@@ -705,6 +732,10 @@ msgstr ""
 msgid "Breaking News"
 msgstr ""
 
+#: inc/helper-functions.php:78
+msgid "Copyright {copy} {year} {site_title}. All rights reserved."
+msgstr ""
+
 #: inc/helper-functions.php:468
 #: inc/helper-functions.php:470
 #: inc/widget/news-widgets/class-cream-magazine-news-widget-eleven.php:80
@@ -768,21 +799,6 @@ msgstr ""
 #: inc/theme-hooks.php:517
 #: single.php:40
 msgid "Next"
-msgstr ""
-
-#. translators: 1: Copyright Text 2: Theme name, 3: Theme author.
-#: inc/theme-hooks.php:786
-msgid "<span class=\"copyright-text\">%1$s</span> %2$s by %3$s"
-msgstr ""
-
-#: inc/theme-hooks.php:789
-#: inc/theme-hooks.php:797
-msgid "Themebeez"
-msgstr ""
-
-#. translators: 1: Theme name, 2: Theme author.
-#: inc/theme-hooks.php:795
-msgid "%1$s by %2$s"
 msgstr ""
 
 #: inc/udp/class-udp-agent.php:116
