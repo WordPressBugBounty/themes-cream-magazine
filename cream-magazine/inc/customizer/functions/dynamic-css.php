@@ -168,6 +168,11 @@ if ( ! function_exists( 'cream_magazine_dynamic_styles' ) ) {
 				.widget_tag_cloud .tagcloud a:hover {';
 			$css .= "border-color: {$primary_theme_color}";
 			$css .= '}';
+
+			$css .= '.ticker_carousel.owl-carousel .owl-nav button:hover svg {';
+			$css .= "color: {$primary_theme_color};";
+			$css .= "fill: {$primary_theme_color};";
+			$css .= '}';
 		}
 
 		if ( ! empty( $header_overlay ) ) {
@@ -222,7 +227,7 @@ if ( ! function_exists( 'cream_magazine_dynamic_styles' ) ) {
 			}
 			$css .= '}';
 
-			$css .= '.entry_cats ul.post-categories li a:hover {';
+			$css .= '.entry_cats ul.post-categories li a:hover, .cm_middle_post_widget_six .middle_widget_six_carousel .item .card .card_content .entry_cats ul.post-categories li a:hover {';
 			if ( cream_magazine_get_option( 'cream_magazine_cat_hover_bg_color' ) ) {
 				$css .= 'background-color: ' . esc_attr( cream_magazine_get_option( 'cream_magazine_cat_hover_bg_color' ) ) . ';';
 			}
@@ -292,7 +297,7 @@ if ( ! function_exists( 'cream_magazine_dynamic_styles' ) ) {
 			}
 			$css .= '}';
 
-			$css .= '.entry_cats ul.post-categories li a:hover {';
+			$css .= '.entry_cats ul.post-categories li a:hover, .cm_middle_post_widget_six .middle_widget_six_carousel .item .card .card_content .entry_cats ul.post-categories li a:hover {';
 			if ( cream_magazine_get_option( 'cream_magazine_cat_hover_bg_color' ) ) {
 				$css .= 'background-color: ' . esc_attr( cream_magazine_get_option( 'cream_magazine_cat_hover_bg_color' ) ) . ';';
 			}

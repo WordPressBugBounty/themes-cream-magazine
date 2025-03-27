@@ -276,22 +276,6 @@ class Cream_Magazine {
 			);
 		}
 
-		wp_enqueue_style(
-			'fontAwesome-4',
-			get_template_directory_uri() . '/assets/dist/fonts/fontAwesome/fontAwesome.min.css',
-			null,
-			CREAM_MAGAZINE_VERSION,
-			'all'
-		);
-
-		wp_enqueue_style(
-			'feather-icons',
-			get_template_directory_uri() . '/assets/dist/fonts/feather/feather.min.css',
-			null,
-			CREAM_MAGAZINE_VERSION,
-			'all'
-		);
-
 		if ( is_rtl() ) {
 
 			wp_enqueue_style(
@@ -545,7 +529,7 @@ class Cream_Magazine {
 	 */
 	public function search_form( $form ) {
 
-		$form = '<form role="search" class="cm-search-form" method="get" action="' . esc_url( home_url( '/' ) ) . '"><input type="search" name="s" placeholder="' . esc_attr__( 'Search...', 'cream-magazine' ) . '" value="' . get_search_query() . '" ><button type="submit" class="cm-submit-btn"><i class="feather icon-search"></i></button></form>';
+		$form = '<form role="search" class="cm-search-form" method="get" action="' . esc_url( home_url( '/' ) ) . '"><input type="search" name="s" placeholder="' . esc_attr__( 'Search...', 'cream-magazine' ) . '" value="' . get_search_query() . '" ><button type="submit" class="cm-submit-btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg></button></form>';
 
 		return $form;
 	}

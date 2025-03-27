@@ -4,7 +4,7 @@ Contributors: themebeez
 Requires at least: 5.0.0
 Requires PHP: 5.6
 Tested up to: 6.7
-Stable tag: 2.1.8
+Stable tag: 2.1.9
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: custom-background, custom-header, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready, one-column, two-columns, blog, news, right-sidebar, theme-options, footer-widgets, left-sidebar, grid-layout, rtl-language-support
@@ -17,7 +17,7 @@ Cream Magazine is a news & magazine WordPress theme with a clean & modern design
 
 == License ==
 
-Cream Magazine WordPress Theme, Copyright (C) 2024, themebeez.
+Cream Magazine WordPress Theme, Copyright (C) 2025, themebeez.
 Cream Magazine is distributed under the terms of the GNU GPL
 
 
@@ -48,9 +48,7 @@ Copyright (c) 2011-2020 The Bootstrap Authors, Inc., [MIT](http://opensource.org
 
 * Theia Sticky Sidebar https://github.com/WeCodePixels/theia-sticky-sidebar, Copyright (c) 2014 Liviu Cristian Mirea Ghiban, [MIT](http://opensource.org/licenses/MIT)
 
-* Feather Font https://github.com/AT-UI/feather-font, Copyright (c) 2013-2017 Cole Bemis, [MIT](http://opensource.org/licenses/MIT)
-
-* Font Awesome http://fontawesome.io/license/, [SIL OFL 1.1, MIT](http://scripts.sil.org/OFL, http://opensource.org/licenses/mit-license.html)
+* Font Awesome https://fontawesome.com/license/free, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
 
 * Animate https://github.com/daneden/animate.css, Copyright (c) 2018 Daniel Eden, [MIT](http://opensource.org/licenses/MIT)
 
@@ -103,6 +101,14 @@ Cream Magazine includes support for Contact Form 7 and Woocommerce.
 
 
 == Changelog ==
+
+= Version 2.1.9 - 27 March, 2025 =
+
+- Removed: Fontawesome and Feather icon fonts.
+- Updated: Font icons with Fontawesome svg icons.
+- Updated: Theme CSS.
+- Tested: Up to PHP version 8.4.
+
 
 = Version 2.1.8 - 27 December, 2024 =
 - Added: Theme welcome notice.
